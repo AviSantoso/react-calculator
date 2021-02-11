@@ -23,5 +23,55 @@
     "id": "divide",
     "display": "÷",
     "type": "operator"
+  },
+  {
+    "id": "zero",
+    "display": "0",
+    "type": "number"
+  },
+  {
+    "id": "one",
+    "display": "1",
+    "type": "number"
+  },
+  {
+    "id": "two",
+    "display": "2",
+    "type": "number"
+  },
+  {
+    "id": "three",
+    "display": "3",
+    "type": "number"
+  },
+  {
+    "id": "four",
+    "display": "4",
+    "type": "number"
+  },
+  {
+    "id": "five",
+    "display": "5",
+    "type": "number"
+  },
+  {
+    "id": "six",
+    "display": "6",
+    "type": "number"
+  },
+  {
+    "id": "seven",
+    "display": "7",
+    "type": "number"
+  },
+  {
+    "id": "eight",
+    "display": "8",
+    "type": "number"
+  },
+  {
+    "id": "nine",
+    "display": "9",
+    "type": "number"
   }
 ]

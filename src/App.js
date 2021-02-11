@@ -1,3 +1,4 @@
+import buttons from "./buttons.json";
 import "./styles.css";
 
 export default function App() {

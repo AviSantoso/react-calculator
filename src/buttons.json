@@ -1,0 +1,27 @@
+[
+  {
+    "id": "equals",
+    "display": "=",
+    "type": "operator"
+  },
+  {
+    "id": "add",
+    "display": "+",
+    "type": "operator"
+  },
+  {
+    "id": "subtract",
+    "display": "-",
+    "type": "operator"
+  },
+  {
+    "id": "multiply",
+    "display": "x",
+    "type": "operator"
+  },
+  {
+    "id": "divide",
+    "display": "÷",
+    "type": "operator"
+  }
+]

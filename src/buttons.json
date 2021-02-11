@@ -1,77 +1,62 @@
 [
   {
     "id": "equals",
-    "display": "=",
-    "type": "operator"
+    "display": "="
   },
   {
     "id": "add",
-    "display": "+",
-    "type": "operator"
+    "display": "+"
   },
   {
     "id": "subtract",
-    "display": "-",
-    "type": "operator"
+    "display": "-"
   },
   {
     "id": "multiply",
-    "display": "x",
-    "type": "operator"
+    "display": "x"
   },
   {
     "id": "divide",
-    "display": "÷",
-    "type": "operator"
+    "display": "÷"
   },
   {
     "id": "zero",
-    "display": "0",
-    "type": "digit"
+    "display": "0"
   },
   {
     "id": "one",
-    "display": "1",
-    "type": "digit"
+    "display": "1"
   },
   {
     "id": "two",
-    "display": "2",
-    "type": "digit"
+    "display": "2"
   },
   {
     "id": "three",
-    "display": "3",
-    "type": "digit"
+    "display": "3"
   },
   {
     "id": "four",
-    "display": "4",
-    "type": "digit"
+    "display": "4"
   },
   {
     "id": "five",
-    "display": "5",
-    "type": "digit"
+    "display": "5"
   },
   {
     "id": "six",
-    "display": "6",
-    "type": "digit"
+    "display": "6"
   },
   {
     "id": "seven",
-    "display": "7",
-    "type": "digit"
+    "display": "7"
   },
   {
     "id": "eight",
-    "display": "8",
-    "type": "digit"
+    "display": "8"
   },
   {
     "id": "nine",
-    "display": "9",
-    "type": "digit"
+    "display": "9"
   }
 ]

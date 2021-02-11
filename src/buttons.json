@@ -27,51 +27,51 @@
   {
     "id": "zero",
     "display": "0",
-    "type": "number"
+    "type": "digit"
   },
   {
     "id": "one",
     "display": "1",
-    "type": "number"
+    "type": "digit"
   },
   {
     "id": "two",
     "display": "2",
-    "type": "number"
+    "type": "digit"
   },
   {
     "id": "three",
     "display": "3",
-    "type": "number"
+    "type": "digit"
   },
   {
     "id": "four",
     "display": "4",
-    "type": "number"
+    "type": "digit"
   },
   {
     "id": "five",
     "display": "5",
-    "type": "number"
+    "type": "digit"
   },
   {
     "id": "six",
     "display": "6",
-    "type": "number"
+    "type": "digit"
   },
   {
     "id": "seven",
     "display": "7",
-    "type": "number"
+    "type": "digit"
   },
   {
     "id": "eight",
     "display": "8",
-    "type": "number"
+    "type": "digit"
   },
   {
     "id": "nine",
     "display": "9",
-    "type": "number"
+    "type": "digit"
   }
 ]

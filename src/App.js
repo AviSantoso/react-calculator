@@ -1,6 +1,10 @@
-import { makeStyles, Button } from "@material-ui/core";
+import React from "react";
+import { makeStyles } from "@material-ui/core";
 
 import buttons from "./buttons.json";
+
+import { ButtonsList, Display } from "./components";
+import { useCalculator } from "./contexts/calculator";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -18,28 +22,24 @@ const useStyles = makeStyles((theme) => ({
 
 export default function App() {
   const styles = useStyles();
+  const { handleDigit, handleOperator } = useCalculator();
 
   const handleClick = (e) => {
-    console.log(e.currentTarget.id);
+    e.preventDefault();
+    const id = e.currentTarget.id;
+    const data = buttons.find((x) => x.id === id);
+    if (Number.isInteger(data.display)) {
+      return handleDigit(data.display);
+    }
+    return handleOperator(data.id);
   };
 
   return (
     <div className={styles.root}>
       <div className={styles.app}>
+        <Display />
         <ButtonsList buttons={buttons} handleClick={handleClick}></ButtonsList>
       </div>
     </div>
   );
 }
-
-const ButtonsList = ({ buttons, handleClick }) => {
-  return (
-    <div>
-      {buttons.map((x) => (
-        <Button variant="outlined" id={x.id} key={x.id} onClick={handleClick}>
-          {x.display}
-        </Button>
-      ))}
-    </div>
-  );
-};

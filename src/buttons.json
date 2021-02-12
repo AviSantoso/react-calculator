@@ -1,5 +1,13 @@
 [
   {
+    "id": "clear",
+    "display": "C"
+  },
+  {
+    "id": "decimal",
+    "display": "."
+  },
+  {
     "id": "equals",
     "display": "="
   },
@@ -21,42 +29,42 @@
   },
   {
     "id": "zero",
-    "display": "0"
+    "display": 0
   },
   {
     "id": "one",
-    "display": "1"
+    "display": 1
   },
   {
     "id": "two",
-    "display": "2"
+    "display": 2
   },
   {
     "id": "three",
-    "display": "3"
+    "display": 3
   },
   {
     "id": "four",
-    "display": "4"
+    "display": 4
   },
   {
     "id": "five",
-    "display": "5"
+    "display": 5
   },
   {
     "id": "six",
-    "display": "6"
+    "display": 6
   },
   {
     "id": "seven",
-    "display": "7"
+    "display": 7
   },
   {
     "id": "eight",
-    "display": "8"
+    "display": 8
   },
   {
     "id": "nine",
-    "display": "9"
+    "display": 9
   }
 ]

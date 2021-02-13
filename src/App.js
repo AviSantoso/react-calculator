@@ -28,7 +28,7 @@ export default function App() {
     e.preventDefault();
     const id = e.currentTarget.id;
     const data = buttons.find((x) => x.id === id);
-    if (Number.isInteger(data.display)) {
+    if (Number.isInteger(data.display) || data.display === ".") {
       return handleDigit(data.display);
     }
     return handleOperator(data.id);

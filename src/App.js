@@ -12,11 +12,18 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     justifyContent: "center"
   },
-  app: {
+  container: {
     background: theme.palette.primary.light,
+    borderWidth: 2,
+    borderColor: theme.palette.primary.main,
+    borderStyle: "solid",
+    borderRadius: "15px",
     height: 600,
     width: 500,
     margin: "auto"
+  },
+  app: {
+    margin: 25
   }
 }));
 
@@ -36,9 +43,14 @@ export default function App() {
 
   return (
     <div className={styles.root}>
-      <div className={styles.app}>
-        <Display />
-        <ButtonsList buttons={buttons} handleClick={handleClick}></ButtonsList>
+      <div className={styles.container}>
+        <div className={styles.app}>
+          <Display />
+          <ButtonsList
+            buttons={buttons}
+            handleClick={handleClick}
+          ></ButtonsList>
+        </div>
       </div>
     </div>
   );

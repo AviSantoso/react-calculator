@@ -14,12 +14,12 @@ export function CalculatorProvider({ children }) {
   const handleOperators = useHandleOperators();
 
   const handleDigit = (digit) => {
-    setState((p) => ({ ...p, value: `${p}${digit}` }));
+    setState((p) => ({ ...p, value: p.value + digit }));
   };
 
   const handleOperator = (op) => {
     setState((state) => {
-      return { ...handleOperators[op](state), operator: op };
+      return { ...handleOperators[op](state, op) };
     });
   };
 

@@ -4,14 +4,6 @@
     "display": "C"
   },
   {
-    "id": "decimal",
-    "display": "."
-  },
-  {
-    "id": "equals",
-    "display": "="
-  },
-  {
     "id": "add",
     "display": "+"
   },
@@ -21,15 +13,15 @@
   },
   {
     "id": "multiply",
-    "display": "x"
+    "display": "*"
   },
   {
     "id": "divide",
     "display": "÷"
   },
   {
-    "id": "zero",
-    "display": 0
+    "id": "power",
+    "display": "^"
   },
   {
     "id": "one",
@@ -66,5 +58,17 @@
   {
     "id": "nine",
     "display": 9
+  },
+  {
+    "id": "decimal",
+    "display": "."
+  },
+  {
+    "id": "zero",
+    "display": 0
+  },
+  {
+    "id": "equals",
+    "display": "="
   }
 ]

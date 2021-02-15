@@ -4,12 +4,14 @@ import { useHandleOperators } from "../hooks/useHandleOperators";
 
 const CalculatorContext = React.createContext();
 
+const defaultState = {
+  value: "",
+  oldValue: null,
+  operator: null
+};
+
 export function CalculatorProvider({ children }) {
-  const [state, setState] = React.useState({
-    value: "",
-    oldValue: null,
-    operator: null
-  });
+  const [state, setState] = React.useState({ ...defaultState });
 
   const handleOperators = useHandleOperators();
 
@@ -17,10 +19,32 @@ export function CalculatorProvider({ children }) {
     setState((p) => ({ ...p, value: p.value + digit }));
   };
 
-  const handleOperator = (op) => {
-    setState((state) => {
-      return { ...handleOperators[op](state, op) };
-    });
+  const handleOperator = (newOperator) => {
+    if (newOperator === "clear") {
+      return setState({ ...defaultState });
+    }
+
+    let { value, oldValue, operator } = state;
+
+    const handle = handleOperators[operator];
+
+    if (operator) {
+      if (handle) {
+        oldValue =
+          "" +
+          (oldValue ? handle(parseFloat(oldValue), parseFloat(value)) : value);
+      }
+    } else {
+      oldValue = value;
+    }
+
+    value = defaultState.value;
+
+    if (newOperator === "equals") {
+      return setState({ ...defaultState, value: oldValue });
+    }
+
+    return setState({ value, oldValue, operator: newOperator });
   };
 
   const calculator = { ...state, handleDigit, handleOperator };

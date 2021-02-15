@@ -26,7 +26,7 @@ export function Display() {
   const { value, oldValue, operator } = useCalculator();
   return (
     <div id="display" className={styles.display}>
-      {value}
+      {value === "" ? "0" : value}
     </div>
   );
 }

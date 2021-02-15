@@ -1,37 +1,22 @@
 export function useHandleOperators() {
-  function add(state, newOp) {
-    console.log("Add");
-    return state;
+  function add(oldValue, value) {
+    return oldValue + value;
   }
 
-  function subtract(state, newOp) {
-    console.log("Subtract");
-    return state;
+  function subtract(oldValue, value) {
+    return oldValue - value;
   }
 
-  function multiply(state, newOp) {
-    console.log("Multiply");
-    return state;
+  function multiply(oldValue, value) {
+    return oldValue * value;
   }
 
-  function divide(state, newOp) {
-    console.log("Divide");
-    return state;
+  function divide(oldValue, value) {
+    return oldValue / value;
   }
 
-  function power(state, newOp) {
-    console.log("Power");
-    return state;
-  }
-
-  function clear(state, newOp) {
-    console.log("Clear");
-    return state;
-  }
-
-  function equals(state, newOp) {
-    console.log("Equals");
-    return state;
+  function power(oldValue, value) {
+    return oldValue ^ value;
   }
 
   return {
@@ -39,8 +24,6 @@ export function useHandleOperators() {
     subtract,
     multiply,
     divide,
-    power,
-    clear,
-    equals
+    power
   };
 }

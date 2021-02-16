@@ -16,6 +16,9 @@ export function CalculatorProvider({ children }) {
   const handleOperators = useHandleOperators();
 
   const handleDigit = (digit) => {
+    if (digit === 0 && state.value === "") {
+      return;
+    }
     setState((p) => ({ ...p, value: p.value + digit }));
   };
 

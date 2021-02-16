@@ -32,6 +32,13 @@ export function CalculatorProvider({ children }) {
 
     let { value, oldValue, operator } = state;
 
+    if (value === "" || value === "-") {
+      if (newOperator === "subtract") {
+        return setState({ value: "-", oldValue, operator });
+      }
+      return setState({ value: "", oldValue, operator: newOperator });
+    }
+
     const handle = handleOperators[operator];
 
     if (operator) {

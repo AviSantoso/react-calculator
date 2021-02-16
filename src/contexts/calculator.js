@@ -19,6 +19,9 @@ export function CalculatorProvider({ children }) {
     if (digit === 0 && state.value === "") {
       return;
     }
+    if (digit === "." && state.value.indexOf(".") >= 0) {
+      return;
+    }
     setState((p) => ({ ...p, value: p.value + digit }));
   };
 
